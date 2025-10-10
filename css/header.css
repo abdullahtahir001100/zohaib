@@ -1,0 +1,122 @@
+@font-face {
+  font-family: style;
+  src: url("Agbalumo/Agbalumo-Regular.ttf");
+}
+@font-face {
+  font-family: fogala;
+  src: url("Fjalla_One/FjallaOne-Regular.ttf");
+}
+@font-face {
+  font-family: regular;
+  src: url("ArefRuqaa-Regular.ttf");
+}
+@font-face {
+  font-family: st;
+  src: url("ADLaM_Display/ADLaMDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: light;
+  src: url("Poppins/Poppins-Light.ttf");
+}
+ * {
+  margin: 0;
+  padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+   right: 0;
+    left: 0;
+    
+    z-index: 1000;
+    background: #fff;
+}
+body{
+    padding-top: 100px;
+}
+ li {
+  list-style: none;
+  margin: 0 25px;
+}
+.inner a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #000;
+  font-family: regular;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 100px;
+  cursor: pointer;
+}
+ header .navbar {
+  padding: 20px;
+  box-shadow: 1px 14px 14px rgba(0, 0, 0, 0.1019607843);
+}
+ a:hover {
+  color: rgb(255, 0, 221);
+}
+ header ul {
+  text-align: center;
+  float: right;
+  line-height: 74px;
+  width: 30%;
+  padding: 10px 30px;
+  height: 29.3rem;
+  box-shadow: 9px 37px 25px rgba(7, 7, 7, 0.1215686275);
+  background: #fff;
+}
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+ img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ .close-icon {
+  width: 26px;
+}
+.active {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+ #nav-links {
+  position: fixed;
+  right: -100% ;
+  top: 120px !important;
+  width: 100% !important;
+  height: 100vh !important;
+  /* background: #fff; */
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+#nav-links.active {
+  right: 0;
+}
+.naver {
+  width: 50px;
+  padding: 0 10px;
+}/*# sourceMappingURL=style.css.map */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 1px 14px 14px rgba(0, 0, 0, 0.1019607843);
+
+}
