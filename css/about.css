@@ -3,13 +3,11 @@
     --text: #1f1f1f;
     --muted: #6f4e37d9;
     --headline: #ffffff;
-    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --cta-color: #6F4E37;
-    
-    /* Variable placeholders for SCSS clamps */
     --gap: 24px;
     --side: 48px;
-    --headline-gap: 10px; 
+    --headline-gap: 10px;
 }
 
 body {
@@ -69,7 +67,7 @@ body {
     gap: var(--headline-gap);
     max-width: 48ch;
     position: relative;
-    left: -85px; 
+    left: -85px;
 }
 
 .hero5__headline span {
@@ -96,27 +94,31 @@ body {
     margin: 0 0 6px 0;
     font-size: 12px;
     margin-bottom: 20px;
+    font-family: style;
 }
 
 .hero5__copy p:last-child {
     font-size: 15px;
     width: 80%;
+    font-family: light;
 }
 
 .hero5__copy strong {
     font-weight: bold;
     font-size: 15.5px;
+    font-family: style;
 }
 
 .hero5__copy em {
     font-style: italic;
     font-weight: 600;
+    font-family: style;
 }
 
 .hero5__cta {
     display: block;
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
     font-weight: 600;
     background-color: var(--cta-color);
     width: fit-content;
@@ -129,4 +131,24 @@ body {
 
 .hero5__cta:hover {
     transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+header a:hover {
+    color: #000;
+}
+@media (max-width: 940px) {
+    .hero5__headline {
+        left: 0;
+    }
+    .hero5__headline{
+        position: static;
+    }
+    .hero5__content{
+        margin: 0 auto;
+    }
 }
